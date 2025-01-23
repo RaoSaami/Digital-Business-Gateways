@@ -119,7 +119,7 @@
 <!-- End whatsapp Section  -->
 
   <!-- Service Section -->
-  <section id="services">
+ <section id="services">
     <div class="services container">
       <div class="service-top">
         <h1 class="section-title">Serv<span>i</span>ces</h1><br>
@@ -128,8 +128,91 @@
         <p><strong> "At Digital Business Gateways", We offer a comprehensive range of services including Web Development, Digital Marketing, Graphic Designing, Content Writing, Logo Designing, Business Profile Designing, Social Media Marketing & QR Code Generator, All Designed to help businesses thrive in the digital landscape. Our team of experts delivers Custom-Built Websites, Strategic Digital Marketing Campaigns, Visual Identities, Compelling Copy, Iconic Logos, Professional Business Profiles, Targeted Social Media Strategies & Seamless QR Code Solutions, providing tailored results-driven solutions for our clients</p>
           </div>
       </div>
+
+
+
+
+<br><br>
+
+<center>
+      <h1 style="font-size: 250%;">Select Service </h1>
+
+      <div style="position: relative; width: 250px; margin-bottom: 20px;">
+        <select 
+            id="dropdown"
+            style="
+                width: 100%;
+                padding: 10px;
+                font-size: 16px;
+                border: 3px solid #ccc;
+                border-radius: 4px;
+                appearance: none;
+                background: transparent;
+                border-color: #16519D;
+                cursor: pointer;"
+        >
+            <option style="background-color: #0056b3; " value="" disabled selected>Click Me To Explore...</option>
+            
+            <option style="background-color: #00AEEF;" value="website development">Website Development</option>
+            <option style="background-color: #00AEEF;" value="digital marketing">Digital Marketing</option>
+            <option style="background-color: #00AEEF;" value="graphic designing">Graphic Designing</option>
+            <option style="background-color: #00AEEF;" value="content OR blog writing">Content OR Blog Writing</option>
+            <option style="background-color: #00AEEF;" value="QR code generator">QR Code Generator</option>
+            <option style="background-color: #00AEEF;" value="business profile designing">Business Profile Designing</option>
+            <option style="background-color: #00AEEF;" value="social media post designing">Social Media Post Designing</option>
+            <option style="background-color: #00AEEF;" value="CV OR resume designing">CV OR Resume Designing</option>
+            <option style="background-color: #00AEEF;" value="social media marketing + management">Social Media Marketing + Management</option>
+            <option style="background-color: #00AEEF;" value="Logo designing">Logo Designing</option>
+            <option style="background-color: #00AEEF;" value="website SEO">Website SEO</option>
+            <option style="background-color: #00AEEF;" value="pinterest Pin Or post designing">Pinterest Pin Or Post Designing</option>
+            <option style="background-color: #00AEEF;" value="youtube thumbnail">Youtube Thumbnail</option>
+            <option style="background-color: #00AEEF;" value="buy facebook liks & followers">Buy Facebook Liks & Followers</option>
+            <option style="background-color: #00AEEF;" value="buy Instagram followers">Buy Instagram Followers</option>
+            <option style="background-color: #00AEEF;" value="buy youtube subscribers OR watch time">Buy Youtube Subscribers OR Watch Time</option>
+            <option style="background-color: #00AEEF;" value="mobile app Or game development">Mobile App Or Game Development</option>
+            <option style="background-color: #00AEEF;" value="video editing">Video Editing</option>
+            <option style="background-color: #00AEEF;" value="AI chat bot development">AI Chat Bot Development</option>
+            <option style="background-color: #00AEEF;" value="buy canva pro subscription">Buy Canva Pro Subscription</option>
+          </select>
+        </select>
+        <span style="
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+            font-size: 14px;
+            color: #666;"
+        >▼</span>
+    </div>
+  </center>
+
+    <script>
+      document.getElementById('dropdown').addEventListener('change', function() {
+          const sectionId = this.value; // Get the selected value
+          const section = document.getElementById(sectionId); // Find the section by ID
+          if (section) {
+              section.scrollIntoView({ behavior: 'smooth' }); // Scroll smoothly to the section
+          }
+      });
+  </script>
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
       <div class="service-bottom">
-        <div class="service-item">
+        <div id="website development" class="service-item">
           <div class="icon"><img  src="./images/webdevelopment.jpeg" /></div>
           <h2 style="align-self: center;">website Development Service</h2>
           
@@ -151,7 +234,7 @@
       </a>
       </div>
 
-        <div class="service-item">
+        <div id="digital marketing" class="service-item">
           <div class="icon"><img   src="./images/digitalmarketing2.jpeg" /></div>
           <h2 style="align-self: center;">Digital <br> Marketing  Service</h2><br><br>
     
@@ -174,7 +257,7 @@
         </div>
 
 
-        <div class="service-item">
+        <div id="graphic designing" class="service-item">
           <div class="icon"><img  src="./images/graphicdes2.jpeg" /></div>
           <h2 style="align-content: center;">Graphic Designing Service</h2><br><br>
           
@@ -196,7 +279,7 @@
       </a>
         </div>
 
-        <div class="service-item">
+        <div id="content OR blog writing" class="service-item">
           <div class="icon"><img   src="./images/contentmarketing.jpeg" /></div>
           <h2 style="align-self: center;">Content Writing Service</h2><br><br>
          
@@ -218,7 +301,7 @@
       </a>
         </div>
 
-        <div class="service-item">
+        <div id="QR code generator" class="service-item">
           <div class="icon"><img   src="./images/qrcode.jpeg" /></div>
           <h2 style="align-self: center;" >QR CODE <br> Designing  Service <br><br></h2>
          
@@ -243,7 +326,7 @@
 
         </div>
 
-        <div class="service-item">
+        <div id="business profile designing" class="service-item">
           <div class="icon"><img   src="./images/businessprofile.jpg" /></div>
           <h2 style="align-self: center;">Business Profile Designing <br> Service</h2>
          
@@ -267,7 +350,7 @@
 
         </div>
 
-        <div class="service-item">
+        <div id="social media post designing" class="service-item">
           <div class="icon"><img   src="./images/postdesigningservice.jpg" /></div>
           <h2 style="align-self: center;">Social Media Post Designing <br> Service</h2>
           
@@ -291,7 +374,7 @@
 
         </div>
 
-        <div class="service-item">
+        <div id="CV OR resume designing" class="service-item">
           <div class="icon"><img   src="./images/cvorresumedesign.jpg" /></div>
           <h2 style="align-self: center;">C V Or Resume Designing <br> Service</h2>
          
@@ -315,7 +398,7 @@
 
         </div>
 
-        <div class="service-item">
+        <div id="social media marketing + management" class="service-item">
           <div class="icon"><img   src="./images/socialmarketing.jpeg" /></div>
           <h2 style="align-self: center;">Social Media Management Service</h2>
          
@@ -339,7 +422,7 @@
 
         </div>
 
-        <div class="service-item">
+        <div id="Logo designing" class="service-item">
           <div class="icon"><img   src="./images/logomaking.jpg" /></div>
           <h2 style="align-self: center;">Logo Designing Service</h2><br><br>
           
@@ -363,7 +446,7 @@
 
         </div>
 
-        <div class="service-item">
+        <div id="website SEO" class="service-item">
           <div class="icon"><img   src="./images/seogoogle.jpg" /></div>
           <h2 style="align-self: center;">Website SEO Service</h2><br><br>
           
@@ -388,7 +471,7 @@
 
         </div>
 
-        <div class="service-item">
+        <div id="pinterest Pin Or post designing" class="service-item">
           <div class="icon"><img   src="./images/pinterestpindesign.jpg" /></div>
           <h2 style="align-self: center;">Pinterest Pins Designing <br> Service</h2>
           
@@ -413,7 +496,7 @@
 
         </div>
 
-        <div class="service-item">
+        <div id="youtube thumbnail" class="service-item">
           <div class="icon"><img   src="./images/youtubethumbnaildesign.jpg" /></div>
           <h2 style="align-self: center;">Youtube Thumbnail Designing </h2>
          
@@ -438,7 +521,7 @@
 
         </div>
 
-        <div class="service-item">
+        <div id="buy facebook liks & followers " class="service-item">
           <div class="icon"><img   src="./images/facebookfollowersbuy.jpg" /></div>
           <h2 style="align-self: center;">Facebook Followers Service</h2>
           
@@ -462,7 +545,7 @@
 
         </div>
 
-        <div class="service-item">
+        <div id=" but instagram followers" class="service-item">
           <div class="icon"><img   src="./images/instagramfollowersbuy.jpg" /></div>
           <h2 style="align-self: center;">Instagram Followers Service </h2>
          
@@ -486,7 +569,7 @@
 
         </div>
 
-        <div class="service-item">
+        <div id="buy youtube subscribers OR watch time" class="service-item">
           <div class="icon"><img   src="./images/buyyoutubesubscriber.jpg" /></div>
           <h2 style="align-self: center;">Youtube Subscribers Service </h2>
 
@@ -510,7 +593,7 @@
 
           </div>
 
-        <div class="service-item">
+        <div id="mobile app Or game development" class="service-item">
           <div class="icon"><img   src="./images/mobileappdevelopment.jpg" /></div>
           <h2 style="align-self: center;">Mobile App Development  Service </h2>
           
@@ -534,7 +617,7 @@
 
         </div>
 
-        <div class="service-item">
+        <div id="video editing" class="service-item">
           <div class="icon"><img  src="./images/videoeditingservice.jpg" /></div>
           <h2 style="align-self: center;">Video Editing Service </h2><br><br>
           
@@ -559,7 +642,7 @@
 
         </div>
 
-        <div class="service-item">
+        <div id="AI chat bot development" class="service-item">
           <div class="icon"><img   src="./images/AiChatBotDevelopment.jpg" /></div>
           <h2 style="align-self: center;">AI ChatBot Development   Service </h2>
           
@@ -583,7 +666,7 @@
 
         </div>
 
-        <div class="service-item">
+        <div id="buy canva pro subscription" class="service-item">
           <div class="icon"><img   src="./images/canvapro.jpg" /></div>
           <h2 style="align-self: center;">Canva Pro Subscription Service</h2>
          
